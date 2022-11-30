@@ -55,25 +55,26 @@
 
     <section class="container mt-5 w-25">
       <div class="row">
-        <form id="contactForm">
+        <form class="was-validated" id="contactForm" >
           <div class="mb-3">
             <label class="form-label" for="name">Nombre</label>
-            <input class="form-control" id="name" type="text" placeholder="Juan Lopez" />
+            <input class="form-control" id="name" type="text" placeholder="Juan Lopez" required/>
+            <div class="invalid-feedback">Por favor llene este campo.</div>
           </div>
           <div class="mb-3">
             <label class="form-label" for="emailAddress">Email</label>
-            <input class="form-control" id="emailAddress" type="email" placeholder="jlopez@email.com" />
+            <input class="form-control" id="emailAddress" type="email" placeholder="jlopez@email.com" required />
+            <div class="invalid-feedback">Por favor ingrese un email valido.<address></address></div>
           </div>
           <div class="mb-3">
             <label class="form-label" for="message">Mensaje</label>
-            <textarea class="form-control" id="message" type="text" placeholder="Mi mensaje" style="height: 10rem;"></textarea>
+            <textarea class="form-control" id="message" type="text" placeholder="Solicito información" style="height: 10rem;" required></textarea>
+            <div class="invalid-feedback">El mensaje no puede estar en blanco.</div>
           </div>
           <div class="d-grid">
             <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
           </div>
-
         </form>
-
       </div>
       </div>
     </section>
